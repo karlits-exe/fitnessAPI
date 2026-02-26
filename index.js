@@ -9,7 +9,7 @@ const app = express()
 require('dotenv').config();
 require("node:dns/promises").setServers(["1.1.1.1", "8.8.8.8"]);
 const corsOptions = {
-    origin: [],
+    origin: ['https://fitnessapi-jbr6.onrender.com'],
     credentials: true,
     optoinSuccessStatus: 200
 }
