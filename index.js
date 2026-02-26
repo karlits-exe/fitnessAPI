@@ -9,10 +9,13 @@ const app = express()
 require('dotenv').config();
 require("node:dns/promises").setServers(["1.1.1.1", "8.8.8.8"]);
 const corsOptions = {
-    origin: ['http://localhost:5173'],
-    credentials: true,
-    optoinSuccessStatus: 200
-}
+  origin: [
+    "http://localhost:5173",
+    "https://fitness-frontend-kappa.vercel.app",
+  ],
+  credentials: true,
+  optoinSuccessStatus: 200,
+};
 
 app.use(cors(corsOptions));
 app.use(express.json());
