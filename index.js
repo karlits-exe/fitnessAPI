@@ -9,7 +9,7 @@ const app = express()
 require('dotenv').config();
 require("node:dns/promises").setServers(["1.1.1.1", "8.8.8.8"]);
 const corsOptions = {
-    origin: ['*'],
+    origin: ['http://localhost:5173'],
     credentials: true,
     optoinSuccessStatus: 200
 }
